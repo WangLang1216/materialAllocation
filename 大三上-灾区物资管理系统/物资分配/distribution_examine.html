@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="css/nav.css" rel="stylesheet" type="text/css" />
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery-1.12.4.js"></script>
+    <title>政府机构管理中心-订单审核</title>
+</head>
+<body>
+    <div class="distribution_examine">
+        <div class="nav navbar-default navbar-fixed-top">
+            <div class="log">LOG</div>
+            <div class="container">
+                <ul class="menu">
+                    <li>
+                        <a href="government.html">主页</a>
+                    </li>
+                    <li><a href="#">仓库管理</a>
+                        <ul class="one">
+                            <li><a href="warehouse_into.html">入库登记</a></li>
+                            <li><a href="warehouse_issue.html">出库登记</a></li>
+                            <li><a href="warehouse_destruction.html">销毁登记</a></li>
+                            <li><a href="warehouse_information.html">物资信息</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">分配管理</a>
+                        <ul class="one">
+                            <li><a href="distribution_examine.html">订单审核</a></li>
+                            <li><a href="distribution_trace.html">订单追溯</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">分发管理</a>
+                        <ul class="one">
+                            <li><a href="distribute_apply.html">物资申请</a></li>
+                            <li><a href="distribute_grant.html">物资分发</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="personal">
+                <p>用户名</p>
+                <a href="#">退出登录</a>
+            </div>
+        </div>
+        
+        <!--主体-->
+        <div class="main">
+            <h1>订单审核</h1>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.menu li').hover(function(){
+                $(this).children('ul').show();
+            },function(){
+                $(this).children('ul').hide();	
+            });	
+        });
+    </script>
+</body>
+</html>
